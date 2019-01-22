@@ -1,0 +1,46 @@
+.about-page{
+    margin: 0 auto;
+    text-align: center;
+    animation: slide-in .4s;
+    &>h1{
+        font-size: 3rem;
+        &>span{
+            
+        }
+    }
+    &>h2{
+        line-height: 2.5rem;
+        &>a{
+            color: #555;
+        }
+    }
+    &>h3{
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-color: gold;
+        margin: 0;
+        animation: slide-bottom .4s .1s;
+        &>a{
+            text-align: center;
+            grid-row: 1;
+            text-decoration: none;
+            font-size: 3rem;
+            margin: 0 30px;
+            color: black;
+            transition: all .3s;
+        }
+        &>a:first-child:hover{
+            color: white;
+        }
+        &>a:nth-child(2):hover{
+            color: #1a77b5;
+        }
+        &>a:nth-child(3):hover{
+            color: #555;
+        }
+
+    }
+}

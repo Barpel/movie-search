@@ -1,0 +1,19 @@
+@import "../../assets/animations.scss";
+.custom-error {
+  position: fixed;
+  top: 85px;
+  left: 33%;
+  background-color: white;
+  z-index: 10;
+  border: 1px solid brown;
+  border-radius: 5px;
+  animation: slide-top 0.4s;
+  max-width: 35%;
+  text-align: center;
+  & > h1 {
+      font-size: 2rem;
+    padding: 10px;
+    margin: 0;
+    color: brown;
+  }
+}

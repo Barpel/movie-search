@@ -1,0 +1,9 @@
+@import "./assets/fonts.scss";
+
+.logo {
+  font-family: 'Coiny', cursive;
+  transform: rotate(-5deg);
+  margin: 0;
+  padding: 10px;
+  max-width: fit-content;
+}

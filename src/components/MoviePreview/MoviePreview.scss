@@ -1,0 +1,63 @@
+@import "../../assets/animations.scss";
+.movie-preview {
+  list-style-type: none;
+  justify-self: start;
+  text-align: center;
+  animation: slide-in 0.4s;
+  opacity: 0.7;
+  transition: all 0.3s;
+  & > a {
+    text-decoration: none;
+    color: black;
+    & > div {
+      border: 1px solid gold;
+      border-radius: 5px;
+      display: grid;
+      align-items: center;
+      grid-gap: 10px;
+      overflow: hidden;
+      height: 100%;
+      min-width: 100%;
+      & > img {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        grid-row: 1;
+        align-self: start;
+        max-height: 350px;
+        min-height: 350px;
+        width: 100%;
+        object-fit: cover;
+        transition: all 0.3s;
+        z-index: 0;
+      }
+      & > h2 {
+        background-color: white;
+        z-index: 1;
+        margin: 0;
+        padding: 5px;
+        font-size: 1.4rem;
+      }
+      & > span {
+        padding: 10px;
+        color: black;
+        font-weight: bold;
+        background-color: gold;
+        height: 50%;
+        align-self: end;
+        transition: all 0.3s;
+        font-size: 1.3rem;
+      }
+      & > span:hover {
+        background-color: rgb(219, 187, 3);
+      }
+    }
+  }
+}
+.movie-preview:hover {
+  opacity: 1;
+  & > div {
+    & > img {
+      transform: scale(1.02);
+    }
+  }
+}

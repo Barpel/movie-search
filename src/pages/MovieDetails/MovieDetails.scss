@@ -1,0 +1,111 @@
+@import "../../assets/animations.scss";
+.movie-details {
+  margin: 10px auto;
+  display: grid;
+  max-width: 60%;
+  border: 1px solid gold;
+  border-radius: 20px;
+  animation: slide-in 0.4s;
+  & > a {
+    text-align: center;
+    grid-column: 1 / span 2;
+    text-decoration: none;
+    color: #333;
+    background-color: gold;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: all 0.3s;
+  }
+  & > a:hover {
+    color: gold;
+    background-color: #333;
+  }
+  & > a:first-child {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  & > a:last-child {
+    border-top: 1px solid rgba(51, 51, 51, 0.26);
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  & > * {
+    margin: 0;
+  }
+  & > h1 {
+    font-size: 2.5rem;
+    grid-column: 1 / span 2;
+    text-align: center;
+    padding: 10px;
+  }
+  & > h3 {
+    text-align: center;
+    grid-column: 1 / span 2;
+    padding: 10px;
+    color: rgb(70, 69, 69);
+  }
+  & > img {
+    justify-self: end;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  & > .movie-details-top-right {
+    grid-column: 2;
+    justify-self: start;
+    align-self: center;
+    display: grid;
+    height: 100%;
+    align-items: center;
+    background-color: gold;
+    & > h4 {
+      color: #333;
+      font-size: 1.3rem;
+      margin: 0;
+      padding: 20px 10px;
+      text-align: left;
+    }
+    & > a {
+      justify-self: center;
+      max-width: fit-content;
+      text-decoration: none;
+      background-color: black;
+      padding: 10px 15px;
+      color: white;
+      border-radius: 10px;
+      font: 1.8rem Verdana, Arial, sans-serif;
+      transition: all 0.3s;
+      margin: 10px;
+    }
+    & > a:hover {
+      background-color: #333;
+      transform: scale(0.98);
+    }
+  }
+  & > h5 {
+    grid-column: 1 / span 2;
+    font-size: 1.2rem;
+    padding: 10px 5px;
+  }
+  & > .ratings {
+    grid-column: 1 / span 2;
+    text-align: center;
+    background-color: gold;
+    & > h2 {
+    }
+    & > div {
+      margin: 0 auto;
+      max-width: fit-content;
+      & > h3 {
+        text-align: left;
+      }
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .movie-details {
+    max-width: 40%;
+  }
+}
