@@ -1,3 +1,6 @@
+The project is available on https://barpel.github.io/movie-search/ (http requests from the db api won't work due to github https policy)
+In order for you to test the project, it must be downloaded.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
